@@ -1,0 +1,24 @@
+Encryption in S3
+
+
+In transit 
+
+SSL / TLS
+
+At rest
+
+Server side encryption
+
+SSE-S3 : S3 managed keys (AES256)
+
+SSE-KMS : AWS Key management service. Audit of who used your keys and why.
+
+SSE-C : Customer managed keys.
+
+If the file is to be encrypted at the time of upload , the header parameter included is x-amz-server-side-encryption
+
+Client side encryption
+
+Exercise
+
+Create a bucket policy which will reject put request which does not have header x-amz-server-side-encryption

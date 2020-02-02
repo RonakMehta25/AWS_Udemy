@@ -1,0 +1,12 @@
+S3 bucket policy
+
+effect : allow or deny
+
+principle : one whom access is given
+
+AWS service : S3
+
+Action :
+
+Amazon resource name ARN :
+

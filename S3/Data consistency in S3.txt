@@ -1,0 +1,5 @@
+Data consistency in S3
+
+1. Read After write consistency for puts of new object. Immediate effect.
+
+2. Eventual Consistency for overwrite (PUTS) and deletion Deletes . It can take some time to reflect

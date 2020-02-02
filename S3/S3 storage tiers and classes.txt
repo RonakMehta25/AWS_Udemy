@@ -1,0 +1,26 @@
+S3 storage tiers/classes
+
+1. S3: General purpose . 99.99% availability and 99.999999999% durablility Stores data redunduntly across multiple device in multiple regions and can sustain loss of 2 device concurrently.
+
+2. S3 IA (infrequently accessed) . Lower fee than s3 but rapid access when required. you are charged everytime you access data.
+
+3. S3 - One Zone IA : Same as S3 IA but data will be stored only in one availability zone. still 99.5% availability and 99.999999999% durablility but cost 20% less than S3 IA.  Min Duration is 30 days . charging is per GB . Min file size chargeable is 128KB
+
+4. Reduced redunduncy storage : Data can be recreated if lost . 99.99% durablility and 99.99% availability.
+
+5. Glacier : Very cheap. For archival only. It takes 3 to 5 hours to restore your data.
+
+S3 intelligent tiering for unknown access pattern
+
+1. Frequent tiering.
+
+2. InFrequent access.
+
+This automatically moves your object to cost effective tier depending upon how you access each object.
+
+If you object is not accessed for 30 days, it gets moved to infrequently access tier.
+
+But if the object in infrequently tier is accessed, it gets move to frequent access. 
+
+
+

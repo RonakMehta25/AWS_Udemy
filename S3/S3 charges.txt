@@ -1,0 +1,7 @@
+S3 charges
+
+1. per GB
+2. requests (get ,put ,copy)
+3. storage management pricing for tags , analytics, inventory.
+4. Data management price when you move or copy data out of S3.
+5. Transfer acceleration (Speed)

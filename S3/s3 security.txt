@@ -1,0 +1,20 @@
+s3 security
+
+By default , all the buckets in S3 are private.
+
+You can setup access to your bucket in the following ways:-
+
+1. Using bucket policy . It applies at bucket level.
+
+2. Using access control list . It applies at object level.
+
+S3 can be configured to create logs which contains all the request made to it . This logs can be put in another bucket.
+
+Bucket policies are written in JSON
+
+Encryption is possible at bucket as well as object level.
+
+We can't upload publicly accessible object to a private bucket.
+
+While creating bucket , we can have bucket access logs as well as object level logs(cloudTrail)
+
