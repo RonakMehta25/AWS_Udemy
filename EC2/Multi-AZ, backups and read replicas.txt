@@ -1,0 +1,30 @@
+Multi-AZ, backups and read replicas
+
+Backups
+
+Two types of backups
+
+1. Automated backups
+
+The retention period of it is from 1 to 35 days. You can take automated backup of snapshots and transaction logs everyday and when you do recovery , aws takes latest backups and applies latest transactionlogs to it and allow you to do point in time recovery.
+
+Automated backups are enabled by default.
+
+The backup data is stored in S3 and you get storage size equal to size of database.
+
+Automated backup are done during a window and storage I/O may be suspended and you may experience latency.
+
+If you delete the original RDS instance , your automated backups will also be deleted.
+
+2. Database snapshots
+
+This  is done manually by user and they are stored even after you delete original RDS instance
+
+
+Whenever you restore your backup , it will be new RDS instance with new DNS endpoint
+
+All the RDS instance, database and it's backup , read replicas are encryped
+
+Excrypting present database is not supported.
+
+To encrypt RDS instance, you need to make create snapshot , make copy of that snapshot and encrypt the copy

@@ -1,0 +1,3 @@
+Redshift
+
+Used as data warehousing tool.

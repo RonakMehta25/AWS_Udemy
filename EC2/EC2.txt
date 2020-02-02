@@ -1,0 +1,14 @@
+EC2 is Amazon Elastic Compute Cloud which provides resizable compute capacity in the cloud. It helps to spin up multiple instances and work on the principle of pay as you go.
+
+It reduces time to boot new servers to minutes.
+
+EC2 options
+
+1. on-Demand : you pay by the hours or seconds you use.
+
+2. Reserved : booked in advance and have huge discount for contract of 1 to 5 years. (Eg standard,convertible and convertible Reserved instances )
+
+3. Spot : you bid prices for instance capacity if you project have start time and end time. If the spot instance is terminated by Amazon , you won't have to pay for the partial result. However if you terminate it ,you have to pay for the complete hour in which application ran
+
+4. Dedicated Hosts : helps to reduce cost by using server bound software license ( Used for regulatory requirement where multi tenancy is not allowed )
+

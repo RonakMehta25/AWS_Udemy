@@ -1,0 +1,7 @@
+CLI tips 
+
+
+1. Always give your user minimum amount of access required.
+2. make security group and assign user to that group.
+3. You will only see secret access key only once.
+4. Do not create secret access key and share it with your developers

@@ -1,0 +1,17 @@
+EBS volume types
+
+General Purpose SSD (GP2)
+General prupose for both price and performance.
+
+ratio of 3 IOPS per GB and with upto 10000 IOPS and ability to burst upto 3000 IOPS for extended period of time
+
+Provisioned IOPS SSD(IO1)
+Intensive application . If your application more than 10000 IOPS
+
+Throughput optimized HDD (ST1)
+bigdata, data warehousing
+
+Cold  HDD (SC1)
+lowest cost , ideal for workload for data accessed infrequently
+
+Magnetic volumes

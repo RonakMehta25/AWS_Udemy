@@ -1,0 +1,16 @@
+RDS
+
+Database type in AWS are
+
+1.SQL server
+2.MySQL server
+3.Oracle
+4.PostgreSQL
+5.Aurora ( It is not available on Free Tier )
+6.MariaDB
+
+Amazon never gives IP address for RDS instance . It gives DNS address and maps this address to the ip address of RDS
+
+Exam Question
+
+EC2 in one securiy group and RDS in another security group then add EC2 security group in RDS security group inbound

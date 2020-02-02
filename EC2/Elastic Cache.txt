@@ -1,0 +1,23 @@
+Elastic Cache
+
+Used for caching of frequently accessed data and can be scaled.
+
+It support 2 types:-
+
+1. memcached
+
+Elastic cache manages memcached as pool that can grow and shrink like EC2
+
+If you need to cache object like database then memcached can be used.
+
+It is very simple as compared to Redis 
+
+It helps to scale horizontally and have multi threaded utilization of CPU.
+
+2. Redis
+
+key value store that supports data structure such as sorted sets and list.
+
+Elastic cache support master slave replication and Multi AZ . This is only available in Redis.
+
+Use case : complex dataset , sorting and ranking , persistance.

@@ -1,0 +1,11 @@
+EBS
+
+Elastic Block storage
+
+It allows us to create storage volumes and attach it to EC2
+
+Once attached , you can create file system on top of it and use it for anything like databases
+
+EBS is placed in a specific availibilty zone and replicated to protect from failure of single component
+
+Main volume is root device volume

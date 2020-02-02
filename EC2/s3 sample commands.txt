@@ -1,0 +1,20 @@
+s3 sample commands
+
+
+Making a bucket
+aws s3 mb s3://{unique-bucket-name}
+
+
+listing bucket
+aws s3 ls
+
+
+echo "Hello world" > hello.txt
+
+put items in bucket
+
+aws s3 cp hello.txt s3://{unique-bucket-name}
+
+To see all files in bucket
+
+aws s3 ls s3://{unique-bucket-name} 

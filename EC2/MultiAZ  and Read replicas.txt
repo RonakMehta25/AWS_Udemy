@@ -1,0 +1,40 @@
+MultiAZ  and Read replicas
+
+MultiAZ allows you to have exact copy of your production database in another availability zone. Exact copy is maintained internally by AWS.
+
+In case of failure , AWS RDS will automatically failover to standby.
+
+MultiAZ is for disaster recovery only. It is not used for performance improvement.
+
+
+Read replicas
+
+Read only copy of your database.
+
+It is replication for performance improvement
+
+MultiAZ is synchronous and Read replicas are asynchronous.
+
+Read replicas are available for
+1. aurora
+2. mariadb
+3. Mysql
+4. postgresql
+
+Must have automatic backups turned on for read replicas
+
+You can have 5 read replicas of database.
+
+You can have read replicas of read replicas but there will be latency.
+
+Eachread replica will have it's own DNS endpoint.
+
+You can have read replicas that have multiAZ enabled.
+
+You can create read replicas of MultiAZ database.
+
+Replica can be promoted to be their database. this will break replication.
+
+You can have read replica in another region as well.
+
+You can encrypt read replica even if primary database is not encrypted.

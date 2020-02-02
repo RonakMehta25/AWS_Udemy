@@ -1,0 +1,9 @@
+Roles vs Group
+
+AWS Groups are the standard groups which you can consider as collection of several users and a user can belong to multiple groups.
+
+AWS IAM Roles are all together different species; they operate like individual users except that they work mostly towards the impersonation style and perform communication with AWS API calls without specifying the credentials.
+
+Given that IAM Roles are little different, I am emphasizing only that. There are several types of IAM Roles like EC2 IAM Roles, Lambda etc. If you consider, you can launch an EC2 instance with an EC2 IAM Role; hence forth any AWS API related communication wouldn't require any AWS Access Key or Secret key for authentication rather can call the APIs directly (however the long answer is - it uses STS and continuously recycles the credentials behind the scenes); the privileges or permissions of what it can do is determined by the IAM Policies attached to the IAM Role.
+
+Lambda IAM Role works exactly the same, except that only Lambda function can use the Lambda

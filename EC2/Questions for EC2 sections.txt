@@ -1,0 +1,11 @@
+Questions for EC2 sections
+
+1.In order to enable encryption at rest using EC2 and Elastic Block Store, you must ________.
+
+Ans : Configure encryption while creating EBS volume.
+
+2.Individual instances are provisioned ________.
+
+Availability zones.
+
+3. Spot instances are very useful when there are flexible time to run 

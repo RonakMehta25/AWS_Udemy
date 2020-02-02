@@ -1,0 +1,11 @@
+AWS IAM Role
+
+Giving access to aws service , account ,openID or active directory to access AWS resources
+
+You don't need to restart EC2 to give it role.
+
+Roles allows you to not use access key id and secret access key
+
+roles are controlled by policies. You can change policy on role and it will take effect immediately.
+
+You can attach or detach roles to EC2 without stopping it

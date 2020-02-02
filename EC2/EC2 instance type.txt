@@ -1,0 +1,36 @@
+Mneumonics
+
+FIGHT DR MC PX
+
+EC2 instance type
+
+F1 : Field Programmable Gate Array
+
+Bigdata, financial analytics
+
+I3 : high speed storage 
+
+Nosql and data warehousing
+
+G3 : Graphics intensive
+
+Video encoding
+
+H1 : High disk throughput
+
+mapreduce job, HDFS
+
+T2 : lowest cost , general purpose
+
+web server / small db
+
+D2 : Dense storage
+
+R4 : Memory optimized
+
+M5 : General Purpose eg. Application server
+
+C5 : Compute optimized
+P3 : Graphics GPU
+
+X1 : Memory optimized

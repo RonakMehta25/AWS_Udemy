@@ -1,0 +1,23 @@
+ELB
+
+It helps to distrbute load across multiple web server.
+
+Three types of load balancer
+
+1. Application load balancer.
+2. Network load balancer.
+3. Classic load balancer.
+
+Application Load balancer
+1. Most suited for http or https services
+2. advanced routing and sending specific request to specific server
+
+Network Load Balancer.
+
+It is used for TCP traffic where extreme performance is required.
+
+X-forwarded  for header.
+
+It gives public ip address when load balancer is sending private ip address
+
+504 is gateway timeout error which means application is failing in code or database.
