@@ -1,0 +1,12 @@
+S3 performance optimization 
+
+
+1. For get request - Use cloudfront
+
+// 2. For mixed request - Bucket key name makes big performane impact . Key with sequential letter may end up in same partition which can cause I/O issues under heavy workload. You can use random keynames.
+
+2018 Amazon performance annoucement
+
+3500 put request per second.
+
+5500 get request per second.

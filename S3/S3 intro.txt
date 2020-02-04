@@ -1,0 +1,27 @@
+S3 intro
+
+Simple storage service gives developer ability  to store their files and any amount of data in AWS cloud.
+
+It is durable , availablity , scalable and distributed.
+
+S3 is object based and thus it is simple key value store.
+
+Files can be from 0 to 5TB in size
+
+There is umlimted storage.
+
+Files are stored in buckets.
+
+s3 is universal namespace so file name should be unique.
+
+After successful upload of file, status code 200 is received.
+
+S3 supports version control.
+
+Thus S3 object consist of 
+
+1. Key (name)
+2. actual data
+3. version
+4. metadata 
+5. subresource - bucket specific configuration like bucket policy and access control list,corss origin resource sharing,transfer acceleration

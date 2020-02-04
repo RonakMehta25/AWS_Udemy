@@ -1,0 +1,29 @@
+cloudfront
+
+It is amazon's content delivery network. It is a group of distributed server that deliver web content to user depending upon geograhical location of user , server.
+
+Edge location is group of server at geographical dispersed data center. 
+This edge location are used by cloudFront to keep a cache of copies of your objects.
+
+User access content from the edge location.
+
+Object are cached for a period of time. time to live
+
+When a new version of object is present , you can clear the cache by program ,but you will be charged for it.
+
+Origin - Actual location of data like S3.
+
+Collection - Name of CDN
+
+Web distribution - Mainly used for websites.
+
+RTMP - for streaming
+
+Real Time Messaging Protocol.
+
+
+CDN can be used for static , dynamic , streaming and interative content.
+
+Amazon cloudefront is optimized to work with S3,EC2,Route53 , load balancing
+
+Cloudfront can also write content of S3 for transfer acceleration by location fastest way to write to S3.

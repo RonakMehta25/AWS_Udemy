@@ -1,0 +1,27 @@
+Cloud Front Lab
+
+Origin name :: S3, EC2 , ip address of private server.
+
+Origin path :: for folder ,images path
+
+Restrict direct access to bucket. If you select no then user won't be able to access S3 directly and you can to create new identity access so that Cloudfront can access S3.
+
+Then you need to give permission to update bucket policy.
+
+Viewer Protocol policy: allow http or redirect http to https or allow only https.
+
+allow http methods: head, get ,put.
+
+TTL(Seconds) decides the time to live for cached copy. Decide TTl depending upon how quickly your object is refreshed.
+
+Restrict viewer access for signed URL or signed cookies for paid content access.
+
+AWS WAF protects you at the application layer.
+
+
+Alternate domain name : You can add your own domain name or at the end they will give you one.
+
+
+In restriction tab after creating the distribution , you can prevent certain user from accessing the content. Yo can whiteslist which country that can access your content or blacklist which cannot access your content.
+
+There is also invalidation tab where you can remove old files from cache in cloudfront

@@ -1,0 +1,3 @@
+CORS
+
+For cross origin resource sharing, if a code is in one bucket and it wants to access data in another bucket.
