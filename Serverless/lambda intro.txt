@@ -1,0 +1,33 @@
+Lambda
+
+It is a compute service where you can submit your code and create your lambda function.
+
+Lambda takes care of provisioning and managing the server that you can use to run the code.
+
+You can use lambda as 
+
+1. Event driven compute service where it lambda runs your code in response to events. This events can be changes to database, S3 buckets etc.
+
+2. You can run your lambda in response to HTTP request using API gateway or API call made using AWS SDK.
+
+3. Lambda function can trigger another lambda function.
+
+If there are 2 request then there will be 2 lambda function.
+
+Lambda function can be written in 
+
+1. Java
+2. Python
+3. C#
+4. Go
+5. Node.js
+
+How are lambda priced.
+
+1. Number of request.
+First million requests are free. 0.2 dollar per million request.
+
+2. Duration.
+It is the time your code begins execution till it returns or terminates rounded upto 100ms.
+The price also depends on amount of memory you allocate to your lambda function.
+Eg. 0.00001667 for every GB-second.

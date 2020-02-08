@@ -1,0 +1,15 @@
+Advantages of lambda
+
+1. No server. Don't need network administractor , system administractor , database administractor.
+2. Continuous auto-scaling.
+3. lambda is super cheap.
+
+
+Exam tips
+1. Lambda scales out. So if you need many thousand lambda , your program will get it. But if it needs more memory then it needs to be done manually.
+
+2. One lambda can trigger many lambda function.
+
+3. Architecture can get very complicated so we use AWS X-ray to bedug.
+
+4. Know your lambda triggers.

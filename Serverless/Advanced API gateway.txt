@@ -1,0 +1,12 @@
+Advanced API gateway
+
+
+You can use API gateway import API feature to import API from external Definition file . Currently, the import feature supports Swagger v2.0 Definition file. 
+
+You can create new API by submitting POST request containing swagger definition in the payload and endpoint configuration.
+
+You can also update existing API by submitting PUT request containing swagger definition
+
+In updating API, you can overwrite it with new definition or merge a defintion with new API.
+
+You can also use API gateway as SOAP web service passthrough.

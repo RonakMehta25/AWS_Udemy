@@ -1,0 +1,9 @@
+Alexa skill with Lambda
+
+We use poly to convert text to speech mp3 file. This mp3 file is then stored in S3.
+
+Then we create Alexa Code in Lambda by using Serverless repository.
+
+Then go to amazon alexa console and point it to this lambda alexa.
+
+For running audio in lambda code, add '<audio src="">' and src should be object URL.

@@ -1,0 +1,32 @@
+AWS X-ray
+
+AWS X-ray helps to collect data about request that your application serves and provide tools to gain insights into view, filter and gain insights into data for identifying issues and opportunites for optimization.
+
+It does not only gives information about request and response but also downstream request to database, microservice,AWS resource
+
+X-ray architecture.
+
+X-ray SDK -> X-ray daemon  -> X-ray API -> X-ray console
+
+It integrates with following services :-
+
+1. Elastic load balancing.
+2. AWS lambda.
+3. API Gateway.
+4. Amazon Elastic compute cloud.
+5. Elastic Beanstalk.
+
+X-ray SDK provides
+
+1. Interceptor to add to your code to trace incoming HTTP request.
+2. Client handler when your applicaton uses other AWS service.
+3. HTTP client for creating call to internal or external HTTP web servies.
+
+X-ray integrates with following language 
+
+1. Java
+2. Python
+3. Go
+4. Node.js
+5. Ruby
+6. .Net

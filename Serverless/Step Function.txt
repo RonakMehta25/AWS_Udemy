@@ -1,0 +1,9 @@
+Step Function
+
+It is used to visualize and test your serverless application.
+
+It's graphical environment helps to visualize the components of your application as series of steps.
+
+Step function also logs state of every state thus making it easier to debug application.
+
+Step function uses Amazon state language and it is in JSON.

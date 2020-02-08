@@ -1,0 +1,13 @@
+Question and answers
+
+1. You have created a serverless application which converts text into speech using a combination of S3, API Gateway, Lambda, Polly, DynamoDB and SNS. Your users complain that only some text is being converted, whereas longer amounts of text do not get converted. What could be the cause of this problem?
+
+Ans : Your lambda needs longer execution time and you should check how long is needed in fringe cases and increase timeout slightly more than that .
+
+2. You have created an application using serverless architecture using Lambda, API Gateway, S3 and DynamoDB. Your boss asks you to do a major upgrade to API Gateway and you do this and deploy it to production. Unfortunately something has gone wrong and now your application is offline. What should you do to bring your application up as quickly as possible?
+
+Ans : Rollback API gateway to previous stage.
+
+You are a developer for a busy real estate company and you want to enable other real estate agents to the ability to show properties on your books, but skinned so that it looks like their own website. You decide the most efficient way to do this is to expose your API to the public. The project works well, however one of your competitors starts abusing this, sending your API tens of thousands of requests per second. This generates an HTTP 429 error. Each agent connects to your API using individual API keys. What actions can you take to stop this behavior?
+
+Ans. Throttle the agent API access with individual API keys.

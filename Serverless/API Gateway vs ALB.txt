@@ -1,0 +1,13 @@
+API gateway vs Lambda
+
+1. API gateway is more expensive than ALB because it offers more features
+
+2. It offers intelligent routing based on header , parameter and also responds depending upon source like mobile or desktop
+
+3. It is used to separate cross cutting concerns like authentication and authorization.
+
+4. It is also used for static data delivery.
+
+5. Also used for response cache
+
+6. Also used for micro service

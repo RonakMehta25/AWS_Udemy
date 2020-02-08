@@ -1,0 +1,12 @@
+Small website with lambda
+
+There will be static website hosted with S3.
+The website will contain html with button sending request to API Gateway.
+
+The API gateway will be trigger to lambda function
+
+The lambda function is json with status code ,header and body 
+
+Remember which service can trigger Lambda
+
+For routing domain name , domain name should be same as bucket name.
