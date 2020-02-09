@@ -1,0 +1,7 @@
+AWS Envelope Encryption
+
+It is process of encrypting the envelope key which is used to encrypt our data.
+
+Envelope key(Key) is encrypted and decrypted with Master Key.
+
+For deleting your encryption key, you first need to disable it and then schedule it for deletion which is between 7 and 30 days

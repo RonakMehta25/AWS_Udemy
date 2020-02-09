@@ -1,0 +1,15 @@
+DynamoDB Accellorator
+
+It is cache providing upto 10 times performance improvement.
+
+It is write through caching service. It means data is written to the cache as well as backend store.
+
+If the item is not present in cache while reading then DAX performs eventual consistent get item from Dynamo DB.
+
+DAX is not suitable for
+
+1. Strong consistency.
+
+2. Write intensive application.
+
+3. Application that has few reads.

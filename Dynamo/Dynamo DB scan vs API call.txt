@@ -1,0 +1,29 @@
+Dynamo DB scan vs Query API call
+
+Query
+
+Query is normal sql query which finds item based on some value.
+
+Results returned by query are always sorted by sort key. It is ascending by default. 
+
+Order can be changed by setting parameter ScanIndexForward to false
+
+This queries are eventual consistent . It can be changed to Strong consistent 
+
+Scan
+
+
+Scan returns all item and data attribute which can be filtered by projectExpression.
+
+But you can also use filter on scan
+
+So the difference is it is applying filter after loading the entire table in memory which is not the case in query.
+
+
+You can improve the response of query or scan by setting page size.
+
+In order to improve the scan operation , you can use parallel scan . By default ,scan works on item sequentially.
+
+It returns 1 MB of result before moving to the next 1 MB of data.
+
+For Parallel Scan , You can divide partition into segment thus scanning each segment in Parallel.

@@ -1,0 +1,25 @@
+KMS Intro
+
+It is multi-tenant solution
+
+It is key management service used to create and manage the encrypted key used to encrypt the data.
+
+Usually ,you should create 2 user
+
+1. First user should be able to create and manage the keys but don't have permission to encrypt or decrypt the data.
+2. Second user should be able to encrypt or decrypt the data without managing the keys.
+
+Encryption keys are regional.
+
+Customer Master Key
+
+1. Alias
+2. Creation Date
+3. Description
+4. Key State
+5. Key Material
+
+It can never be exported. 
+
+If you want to export key , then use Cloud HSM(hardware Security Module) dedicated host to you .
+

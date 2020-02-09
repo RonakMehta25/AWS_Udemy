@@ -1,0 +1,27 @@
+Dynamo DB provisioned Throughput
+
+
+Provisioned throughput is measured in Capacity Unity
+
+When creating table , you have to specify your requirement as read capacity unit and write capacity unit if auto scaling is not turned on.
+
+1 write capacity unit  = 1*1 KB per second
+
+1 read capacity unit = 1 strong consistency of 4 KB or 2 eventual consistency of 4 KB. 
+
+Eg 5 Read Capacity and 5 Write capacity table.
+
+This configuration will be able to perform 
+
+5 write capacity unit = 5 KB/second write
+
+5 Strong consistency read= 5*4 = 20 KB/s strong consistency read
+
+5 eventual consistency read= 2*5*4 = 40 KB/s eventual consistency read.
+
+Calculating the requirement
+
+1. suppose you have 80 item to read per second and each item is 3 KB and you only need strong consistency.
+Then you can divide by 4 KB and multiple with number of items 
+
+Here answer is 60 capacity unit without rounding off.

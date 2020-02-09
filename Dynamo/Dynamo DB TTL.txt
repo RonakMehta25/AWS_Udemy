@@ -1,0 +1,15 @@
+Dynamo DB TTL
+
+Time to live define expiry time for your data
+
+item which are expired are marked for deletion
+
+It can be temporary data, event data,log data,session data.
+
+Thus it can help reduce cost by removing data.
+
+TTL expressed Epoch Time format or Unix time or Posix time.
+
+aws dynamodb create-table --table-name {tableName}  --attribute-definition --provisioned-throughput {}
+
+You can set TTL on some column in Dynamo DB tab in AWS

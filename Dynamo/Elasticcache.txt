@@ -1,0 +1,22 @@
+Elasticache
+
+Example : memcached and Redis
+
+2 types of caching :-
+
+1. Lazy Loading
+
+2. Write through
+
+1. Lazy Loading
+
+It only loads the data when necessary. If there is miss in cache then application has to load the data in cache.
+This means it can have stale data as it is not updated automatically.
+
+We can add TTL to our data . It gives time till data can be kept . After the data expires , it has to query original database. Thus it has read penalty.
+
+2. Write through
+
+It updates the data in database as well as cache. Thus there is overhead of updating cache everytime. Thus it has write penalty
+
+If the node fails then data will be missing in new node until data is updated or new data is added.

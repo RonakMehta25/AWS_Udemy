@@ -1,0 +1,25 @@
+Dynomo Intro
+
+Dynamo is fast and flexible NoSQL database.
+
+It supports both document and key value data models.
+
+Storage 
+
+It is stored in SSD in 3  geographical distinct data center 
+
+It has 2 consistency models
+
+1. Eventual Consistency Read (Default)
+Consistency across all copies of data is usually reached within a second. Thus repeating read after short time should give updated data. 
+
+2. Strong Consistency Read
+It returns a result that reflects all writes that received a successful response prior to the read
+
+Terms in Dynamo DB.
+
+Item is row
+attributes is column
+
+document can be HTML,XML,JSON
+

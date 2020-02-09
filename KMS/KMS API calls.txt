@@ -1,0 +1,8 @@
+KMS API calls
+
+aws kms encrypt 
+
+aws kms encrypt
+aws kms decrypt
+aws kms re-encrypt
+aws kms enable-key-rotation

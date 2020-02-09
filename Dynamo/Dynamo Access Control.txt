@@ -1,0 +1,11 @@
+Dynamo Access Control
+
+Access control is managed by AWS IAM
+
+You can create IAM user with specific permission to access your dynamo DB table.
+
+You can also create IAM role with temporary Access key to access Dynamo DB
+
+You can use special IAM condition to restrict user access to their own record. Which is Dynamo DB matches userId with Partition Key. Also you can specify action allowed for this match. get, put , update.
+
+Here for IAM condition , the parameter is dynamodb:LeadingKeys

@@ -1,0 +1,5 @@
+Dynamo DB table
+
+aws dynamodb get-item --table-name {tableName} --region {regionName} --key  '{"id":{"N":"205"}}'
+
+BatchGetItem is used to get multiple item from dynamodb

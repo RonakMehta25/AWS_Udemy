@@ -1,0 +1,11 @@
+Dynamo DB Primary Key
+
+It retrives data based on Primary key
+
+It support 2 types of Primary Key
+1. Partition Key - unique attribute which is passed to hash function to distribute data on physical location
+2. Composite Key - (Partition Key + Sort Key)
+
+Use this in case , primary key is not unique.
+
+Here sort key can be timestamp.

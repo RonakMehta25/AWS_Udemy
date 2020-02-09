@@ -1,0 +1,21 @@
+Dynamo DB indexes
+
+In Database term, Index is a data structure which allows you to perform fast queries on some columns.
+
+In dynamo DB, 2 types of index are supported 
+
+1. Local Secondary Index.
+
+2. Global Secondary Index.
+
+Local Secondary Index
+
+It can be created when the table is created. After that it cannot be added,removed or modified.
+
+It has same Partition key as your table but different sort key which helps to speed up process.
+
+Global Secondary Index
+
+It can be created at any time.
+
+Different partition key as well as sort key.
