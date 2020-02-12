@@ -1,0 +1,9 @@
+Kinesis
+
+It is used for streaming data.
+
+There are 3 types
+
+1. Kinesis streams
+2. Kinesis Firehose
+3. Kinesis Analytics.

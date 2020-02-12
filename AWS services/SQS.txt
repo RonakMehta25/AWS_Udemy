@@ -1,0 +1,40 @@
+SQS
+Simple Queue Service
+Messages are 256KB in size
+First ever AWS service that was publicly available.
+
+It is a web service that gives you access to message queue that can be used to store message queue while your computer processes data.
+
+It is a distributed queue system that can be reliably store messages for one component to generate messages to be viewed by another component.It used to decouple the application.
+
+Defauly rentention time is 4 days
+
+Messages can be in Queue from 1 min to 14 Days
+
+SQS is a pool based system.
+
+2 types of queues :-
+
+1. Standard Queues (Nearly unlimited number of transaction per second)
+It can contain duplicates
+
+
+2. FIFO Queues (300 Transaction per second)
+
+Here duplicates are not allowed. It also supports Multiple Ordered Message Queue 
+
+
+SQS visibility Timeout.
+The time for which message become invisible after reader picks it up.
+If the job is processed successfully after picking the messages , queue deletes the message .
+
+If the job is not processed successfully then message becomes available again and thus this can give duplicate messages.
+
+Default visibility timeout is 30 seconds
+Maximum is 12 hours.
+
+SQS long polling is a way to retrieve messages from AWS SQS 
+
+There is short polling an long polling. Short polling returns empty if queue is empty 
+
+But long polling returns when value arrives in SQS . Thus it saves your money.

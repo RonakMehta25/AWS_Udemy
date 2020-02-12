@@ -1,0 +1,31 @@
+Questions
+
+1. You run a video-hosting website with two types of members: premium, fee-paying members; and free members. Each video that is uploaded is processed by a fleet of EC2 instances, which poll an SQS queue as videos are uploaded. However, you need to ensure that the videos uploaded by your premium, fee-paying members have a higher priority than those of your free members. How might you work with SQS to ensure priority treatment of the premium members' videos?
+Answer : Create 2 queue : Program your EC2 to poll your premium queue first and if it is empty then queue free queue.
+
+
+2. Your EC2 instances download jobs from an SQS queue. However, they are taking too long to process the messages. What API call can you use to extend the length of time to process the jobs?
+
+ChangeMessageVisibility. Changes the visibility timeout of a specified message in a queue to a new value. The maximum allowed timeout value is 12 hours.
+
+
+3. Which Amazon service can you use in conjunction with SQS to "fan out" SQS messages to multiple queues?
+
+Answer : SNS
+
+4. What is the maximum long poll time out?
+
+Answer : 20 seconds
+
+5. You have a list of email addresses to which you need to push emails on a periodic basis. What do you subscribe them to?
+
+Answer : Topic
+
+6. Which of these is a protocol NOT supported by SNS:
+
+Answer : FTP
+
+
+7. What languages and development stacks are not currently supported by AWS Elastic Beanstalk?
+
+Answer : Jetty for JBoss Application.

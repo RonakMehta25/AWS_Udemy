@@ -1,0 +1,5 @@
+Advanced Elastic Beanstalk
+
+You can customize your elastic beanstalk using elastic beanstalk configuration files. Which means you can define packages to install,create linux user and group,run shell commands, sepcify service to enable or disable load balancer.
+
+This are files in YAML or JSON format. They have .config extension and must be inside folder .ebextensions

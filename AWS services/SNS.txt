@@ -1,0 +1,21 @@
+SNS
+
+Simple Notfication Service. Push service.
+
+Push notification to google,apple,fire OS and windows as well as android device in china with Baidu Cloud Push. SMS,email,http endpoint
+
+SNS is also used to trigger lambda function.
+
+SNS messages are stored redundently across multiple availability zones.
+
+It is inexpensive , pay as you go service.
+
+Pricing
+
+Users pay 0.50 dollar per  1 million SNS request.
+
+0.06 dollar per 100000 notification deliveries via http endpoints
+
+0.75 dollarper 100 notification over mobile.
+
+2 dollar per 100,000 notification deliveries on email.

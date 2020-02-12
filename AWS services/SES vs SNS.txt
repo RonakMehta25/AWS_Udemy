@@ -1,0 +1,7 @@
+SES vs SNS
+
+Simple Email Service
+
+Incoming mail can be used to trigger Lambda function and SNS
+
+For automated Email,purchases using credit card, marketing information.

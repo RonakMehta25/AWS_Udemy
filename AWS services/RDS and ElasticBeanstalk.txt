@@ -1,0 +1,11 @@
+RDS and ElasticBeanstalk
+
+There are 2 ways of integration of RDS with ElasticBeanstalk
+
+1. You can launch RDS instance from your elastic Beanstalk console which means RDS is created within your Elastic Beanstalk Environment. 
+This is good option for Dev and Test environment.
+
+2. For production environment, decouple RDS from elasticBeanstalk.
+This gives lot of flexibility that allows you to connect multiple environment to the same database, provides wider range of database choices.
+
+To do this, you need to add additional security group to your auto scaling group. You will need to provide additional connection string.

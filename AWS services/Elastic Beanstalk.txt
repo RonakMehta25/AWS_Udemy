@@ -1,0 +1,28 @@
+Elastic Beanstalk
+
+It is use to deploy and scalingweb application in any language like Java, python etc.
+
+It also support web application like Tomcat,Nginx,Passenger, IIS
+
+It can integrate with cloudwatch and X-ray for performance and metrics.
+
+Elastic Beanstalk 
+
+It gives following options for processing deployment
+
+1. All at once
+Deploy to all service simultaneously. All instance will be out of service together.
+
+2. Rolling
+Deploy the new version in batches. Each batch of instance will be taken out of service.
+
+3. Rolling with additional batch policy.
+Launches additional batch of instances.
+
+
+4. Immutable
+
+Deploys the new version to a fresh group of auto scaling groups
+
+When the new instance pass their health check, they are moved to existing auto-scaling group.
+The impact is far less and rollback just requires only terminating new auto-scaling group.
