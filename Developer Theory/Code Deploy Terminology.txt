@@ -1,0 +1,13 @@
+Code Deploy Terminology
+
+Deployment Group : It is group of EC2 instances or Lambda function to which new version of the software will be deployed.
+
+Deployment : Process
+
+Deplyment Configuration : set of deployment rules and success/failure condition.
+
+AppSpec File : Action for deployment executed by Code Deploy.
+
+Revision : Everthing for new version . AppSpec , Application file, executable.
+
+Application : Unique identifier for the application you want to deploy.

@@ -1,0 +1,17 @@
+Docker and CodeBuild
+
+Docker is open source tech which allow you to create application on windows or linux containers
+
+Container is a light weight software package which includes everything a software needs to run like run code environment,library,settings etc.
+
+docker build -t mydocker -- it builds docker image based on docker file.
+
+docker tag mydocker:latest {URL} - tagging docker image as latest.
+
+docker push {URL} - push to Elastic Container Service
+
+buildspec.yml is used by code Build for settings and build commands
+
+You can override the settings in your buildspec by adding your own commands when you launch the build
+
+If the build fails, you can watch build log in codebuild console and entire long in cloud watch.

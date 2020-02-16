@@ -1,0 +1,21 @@
+CI_CD Whitepaper
+
+There needs to be 3 teams for the project
+
+1. Application team to actually develop
+2. Infrastructure team for resource creation and management needed by Development team like AWS EC2, S3
+3. Tools team to actually create the CI/CD pipeline.
+
+Efforts size and cost should be in following order of pyramind 
+
+1. Unit test can be easily developed and least cost
+2. Integration test of component and services
+3. Performance and compliance
+4. User Acceptance Testing.
+
+
+Adding Lambda Actions
+AWS CodeStar and AWS CodePipeline support integration with AWS Lambda.14
+This integration enables implementing a broad set of tasks, such as creating
+custom resources in your environment, integrating with third-party systems
+(such as Slack), and performing checks on your newly deployed environment.

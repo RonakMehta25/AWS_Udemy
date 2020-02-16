@@ -1,0 +1,7 @@
+Cloud Formation Nested stack
+
+Stacks that create other stacks
+
+It is for reuse of Cloud Formation for common use cases
+
+If a load balancer configuration used many times, you can store it in a template and reference it from many cloud formation template instead of using it again and again.

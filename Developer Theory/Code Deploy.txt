@@ -1,0 +1,25 @@
+Code Deploy
+
+It is automated deployment service to EC2, lambda , premise system.
+
+Helps to avoid downtime,release new feature quickly and avoid risk with manual process.
+
+It automatically scales with your infrastructure and integrates with Jenkins,github,atlassian,CodePipeline and config management like chef , puppet and Ansible.
+
+There are 2 deploymeny approaches available
+
+1. In place
+2. Blue/Green.
+
+1. In place, Rolling.
+
+Application is stopped in each instance and latest revision installed.
+Thus application is out of service during this time and capacity is reduced.
+
+2. Blue(old)/Green(green)
+
+Here new instance are launched and code is deployed in new version and 
+
+Thus when new version start working normally then old instances can be terminated.
+
+Also in case of failure,new instance can be deleted and load balancer just needs to point to old instance.

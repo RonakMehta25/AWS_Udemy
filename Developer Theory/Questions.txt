@@ -1,0 +1,11 @@
+Questions
+
+1. You want to receive an email whenever a user pushes code to your CodeCommit repository, how can you configure this?
+
+Answer : Configure Notification in the console which will create cloudwatch event to send notification to SNS topic which will trigger email to be sent to user.
+
+2. Cloud watch Deployment failed. By default what will happen
+
+Answer : It will rollback the entire stack
+
+3. AppSpec.yml for EC2 can only be in YAML 

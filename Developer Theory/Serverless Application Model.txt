@@ -1,0 +1,9 @@
+Serverless Application Model
+
+It is extension of cloud formation for serverless application
+
+sam package --template-file mytemplate.yml --output-template-file sam-template.yml --s3-bucket s3BucketName
+
+
+
+sam deploy --template-file  sam-template.yml  --stack-name mystack  --capabilities  CAPABILITY_IAM

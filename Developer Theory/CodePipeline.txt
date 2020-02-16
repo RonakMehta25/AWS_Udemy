@@ -1,0 +1,11 @@
+CodePipeline
+
+It fully managed CI/CD.
+
+Triggers automated build and deployment when there is small change.
+
+Code Pipeline allows you to model your release process as workflow.
+
+It integrates with CodeCommit,CodeDeploy,CodeBuild,Lambda,EC2,cloud Formation,Elastic Beanstalk,Elastic container service and other service like Github and jenkins.
+
+If one of your automated test fails

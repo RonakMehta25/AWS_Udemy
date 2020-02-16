@@ -1,0 +1,23 @@
+Code Deploy Lab
+
+Steps:
+
+1. Create Role for giving EC2 instance access to S3.
+2. Create Role for giving Code Deploy access to deploy code to EC2 instance.
+3. Launch your EC2 instance.
+4. Go to your EC2 instance with ssh
+5. Install CodeDeploy on your EC2 instance.
+
+6. Configure local machine as developer machine which will connect to codeDeploy(it uses appspec.yaml from local machine) and package our code to S3. 
+
+7. Remember the yaml structure.
+
+
+8. Create Application with Code-Deploy
+aws deploy create-application --application-name webapp
+
+9. Push your code zip from S3 bucket to created application above. 
+
+aws deploy push --application-name webapp --s3-location s3://<URL>/webapp.zip 
+
+10. Go to Code deploy and application and select deployment group.

@@ -1,0 +1,13 @@
+AWS codeCommit
+
+Fully Managed source control service to host secure and highly scalable private git repositories.
+
+You can use either https or ssh.
+
+step 
+
+1. create repositoriy in AWS CodeCommit.
+2. Upload file from UI to this Repo.
+3. Create Branch from Master.
+4. Change the file in branch.
+5. Create Pull request from Branch to Master and then merge it.

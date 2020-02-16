@@ -1,0 +1,21 @@
+Cloud Formation
+
+Cloud Formation is a service that allows you to manage, configure and provision you AWS infrastructure as a code.
+
+Resources are defined using cloud Formation template.
+
+Template can be in JSON or YAML
+
+Cloud Formation interprets the template and makes appropriate API call to create resources you have defined.
+
+This helps in less time, fewer mistakes and more consistently.
+
+You can version control your template and peer reviewed.
+
+Also use to manage dependencies and updates.
+
+Can be used to rollback or create the entire stack as well.
+
+This cloud Formation template must be uploaded to S3.
+
+The resulting resources are called as stack.

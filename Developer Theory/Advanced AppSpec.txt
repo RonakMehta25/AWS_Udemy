@@ -1,0 +1,38 @@
+Advanced AppSpec
+
+It is used by CodeDeploy for the paramters.
+
+For lambda deployment, files can be in JSON or YAML.
+
+version: Reserved for future use . Currently only 0.0
+
+resources: name and properties of lambda function to deploy.
+
+hooks : Specifies the lambda function to run before routing the traffic or after routing the traffic.
+
+BeforeAllowTraffic and AfterAllowTraffic
+
+For EC2 and on premise 
+
+The structure is
+
+1. version
+2. os
+3. files: Location of any application file and from source and destination folder.
+4. hooks.
+BeforeInstall :
+AfterInstall : 
+
+BeforeBlockTraffic: Run tasks on instances before they are deregistered from load balancer.
+BlockTraffic: Deregister from load balancer.
+AfterBlockTraffic : Run tasks on instances after they are registered.
+
+For EC2 and On-Premise, appSpec must be in the root directory.
+
+ApplicationStop
+DownloadBundle : Application downloads copies application revision files to temporary location.
+BeforeInstall:
+Install:
+AfterInstall:
+ApplicationStart:
+ValidateService:

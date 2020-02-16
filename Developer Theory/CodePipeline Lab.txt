@@ -1,0 +1,28 @@
+CodePipeline Lab
+
+Here 
+
+we use cloud Formation for EC2 instances, create IAM roles and policy, install codeDeploy.
+
+cloud Formation uses template from S3 to create above.
+
+1. aws cloudformation create-stack --stack-name CodeDeployDemoStack \
+--template-url http://s3-eu-west-1.amazonaws.com/cftemplates-faye/CF_Template.json \
+--parameters ParameterKey=InstanceCount,ParameterValue=1 \
+ParameterKey=InstanceType,ParameterValue=t2.micro \
+ParameterKey=KeyPairName,ParameterValue=irkp \
+ParameterKey=OperatingSystem,ParameterValue=Linux \
+ParameterKey=SSHLocation,ParameterValue=0.0.0.0/0 \
+ParameterKey=TagKey,ParameterValue=Name \
+ParameterKey=TagValue,ParameterValue=CodeDeployDemo \
+--capabilities CAPABILITY_IAM
+
+2. Upload code verion 1 on S3 bucket created with verioning on
+
+3. Check if the cloud formation command status and also if code deploy is on.
+
+4. Create application on code deploy and create deployment group and add EC2 in it and create deployment with S3 bucket name in it.
+
+5. Then go to Code Pipeline.
+
+6. In Code Pipeline, give code Deploy application name and S3 bucket

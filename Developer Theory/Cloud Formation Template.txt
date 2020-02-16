@@ -1,0 +1,11 @@
+Cloud Formation Template
+
+1. Version
+2. Metadata
+3. Description
+4. Parameters - input Custom values
+5. Conditions. Resource provision based on environment
+6. Mappings. create custom mappings like region : AMI
+7. Transform. It is used to reference additional code stored in S3 for code reusablility.
+8. Resources.
+9. Output

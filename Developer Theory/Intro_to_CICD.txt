@@ -1,0 +1,19 @@
+Intro_to_CI/CD
+
+It means Continuous integration and continuous delivery or continuous deployment.
+
+Continuous Integration
+
+Here Developer push code for bug fix or feature to Git. 
+
+Before the code is committed ,Automated tests are triggered 
+
+To ensure new build does not cause system failure or any bugs , there is Test framework .
+
+After successful execution of test, code is committed.
+
+Continuous Delivery 
+It means code from repository is picked and build and deployed at staging area for more functional testing.
+
+For continuous Deployment 
+New Automated Deployment for production comes into picture.

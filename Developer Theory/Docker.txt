@@ -1,0 +1,11 @@
+Docker
+
+Docker provides Platform as a Service.
+
+Docker Desktop is a client which you can use to interact with Docker.
+
+This is used to package your code with all the configuration etc such that same image runs on production as the one in your computer.
+
+Then you can publish your docker image on Docker Hub online.
+
+Docker has local image storage where it keeps it local image downloaded from Docker Hub.
