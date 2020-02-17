@@ -1,0 +1,13 @@
+Inline vs Managed vs Custom Policies
+
+Managed Policies are created and Managed by AWS
+
+It is use for common use case like dynamoDB access,codeCommit Access and EC2ReadOnlyAccess.
+
+Custom policy is one you make and administer using your AWS account. 
+
+You can use custom policy only within your account for roles,users or group.
+
+Inline policies are the one which are embedded within the user , group or role to which it applies.
+
+If user , group or role is deleted then policy is also deleted.

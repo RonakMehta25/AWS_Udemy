@@ -1,0 +1,13 @@
+Web Identity Federation
+
+It means giving user access to AWS resources after they have authenticated with web identity provider like google, Facebook.
+
+After the successful authentication provider, user are given authentication code(web token) which they can trade for temporary AWS credentials.
+
+Amazon cognito provides
+
+1. sign-in and sign-up to your apps
+2. access for guest user.
+3. synchronizes user data across all application
+4. Recommended for all mobile application
+5. Act as Identity Broker application and web ID provider Meaning it gives user access for the web token received from web identity provider. Thus No need to store temporary credentials  locally on device thus providing seamless experience.

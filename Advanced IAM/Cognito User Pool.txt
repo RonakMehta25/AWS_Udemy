@@ -1,0 +1,25 @@
+Cognito User Pool
+
+User pools are user directories used to manage sign-in and sign-up for mobile and web application.
+
+User can sign-in using the user pool or indirectly by web identity provider like FB,google
+
+Cognito act as identity broker between ID provider and AWS.
+
+Successful authentication generates number of JWT JSON web tokens.
+
+Identity pools enables you to create unique identities for your users and authenticate them using web identity provider.
+
+In order to provide seamless user experience, it does push synchronization for updates across multiple devices.
+
+Cognito tracks the association between various user identity and various device they sign-in.
+
+Thus it uses SNS
+
+It integrates with
+
+1. FB
+2. Google
+3. Amazon
+4. OpenID
+5. SAML or active directory.

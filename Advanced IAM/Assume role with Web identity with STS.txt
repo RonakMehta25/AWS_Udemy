@@ -1,0 +1,23 @@
+Assume role with Web identity with STS
+
+STS is security token service.
+
+Cognito underneath calls STS
+
+Rehular web application use this STS
+
+When user has successfully authenticated with web identity provider , user makes assume role web identity call with STS
+
+If successful, STS will return temporary credentials
+
+How can you allow a user from one AWS account to access and manage resources in another AWS account?
+
+Ans : Configure cross account access.
+
+
+Which of the following services can be used to securely store confidential information like credentials and license codes so that they can be accessed by EC2 instances?
+
+
+
+AWS Systems Manager Parameter Store provides secure, hierarchical storage for configuration data management and secrets management. You can store data such as passwords, database strings, and license codes as parameter values.
+
