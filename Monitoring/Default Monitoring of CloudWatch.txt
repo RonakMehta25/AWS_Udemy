@@ -1,0 +1,12 @@
+Default Monitoring of CloudWatch
+
+It measures host level metrics
+
+1. CPU
+2. Network
+3. Disk
+4. Status Check
+
+RAM is custom metrics. Same for how much Disk space is utilized or available
+
+EC2 Monitoring is 5 minute unless you turn on detailed Monitoring which is 1 minute.

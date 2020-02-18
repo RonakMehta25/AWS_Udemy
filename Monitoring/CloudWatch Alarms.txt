@@ -1,0 +1,5 @@
+CloudWatch Alarms
+
+You can create alarm on any metric like EC2 CPU utilization, Elastic Load balancer latency or charges 
+
+You can set threshold to trigger the alarm and what kind of action needs to be taken.

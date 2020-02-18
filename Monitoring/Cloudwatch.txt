@@ -1,0 +1,27 @@
+Cloudwatch
+
+It is a monitering service that is used to monitor your AWS resource as well as the your application that you run on AWS.
+
+It can be used on premise as well. Just need to install cloudwatch agent and SSM agent 
+
+It can monitor things like 
+
+1. Compute
+
+Auto-scaling group
+Elastic Load balancer
+Route53 health check
+
+2. Storage and content Delivery
+
+EBS volume
+storage gateway
+CloudFront
+
+3. Database Analytics
+
+1.RDS
+2.DynamoDB
+3.Elastic Cache
+4.Elastic MapReduce Job Flows
+5.Redshift

@@ -1,0 +1,7 @@
+Cloudwatch vs cloudTrail vs config
+
+Cloudwatch monitors performance
+
+CloudTrails monitors your API call
+
+AWS config records the state of your environment and notify you of changes.

@@ -1,0 +1,11 @@
+Log retrievel in Cloud Watch
+
+Log data are retrieved by GetMetricsStatistics API or by using third party tools offered by AWS partners.
+
+Data are persisted indefinitely in cloudwatch by default.
+
+Thus we can save the log data as long as we want.
+
+We can set retention for each log group at any time.
+
+We can set log data for any terminated EC2 instance or Elastic load balancer after it's termination.

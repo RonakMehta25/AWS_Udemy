@@ -1,0 +1,9 @@
+Metric Granularity
+
+It depends upon AWS service , many default are 1 min but it can have 3 or 5 min.
+
+Normal Monitoring is every 5 mins.
+
+Detailed Monitoring is every 1 mins.
+
+For custom metrics, minimum granularity is 1 mins.
