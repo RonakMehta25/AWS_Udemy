@@ -1,0 +1,18 @@
+AWS CLI Pagination
+
+The default page size is 1000
+
+So when you run command for S3 which has 2500 objects. It will make 3 API calls but displays entire output in one go.
+
+Sometimes default page size of 1000 may be too high. It happens during API timeout error.
+
+You can set page size when you run command with --page-size
+
+The CLI will still retrieve the full list but will make large number of API call in the background and
+retrieve small number of objects with each call.
+
+aws s3api list-objects --bucket {myBucket} --page-size 100
+
+we can use --max-items
+
+aws s3api list-objects --bucket {myBucket} --max-items 100

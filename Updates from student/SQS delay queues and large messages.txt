@@ -1,0 +1,24 @@
+SQS delay queues and large messages
+
+Postpone delivery of new messages to delay queue by few seconds.
+
+This means message become invisible for that number of seconds.
+
+Default is 0 second and max is 900 seconds
+
+Now for standard queue this doesn't impact messages in the queue . It only impacts new messages
+
+For FIFO queue, it impacts all the messages.
+
+This is usually used in large distributed application. Like for online transaction confirmation after database update.
+
+For large messages> 256KB, messages are stored in S3.
+
+For this , you need to use Amazon SQS extended client library for JAVA and AWS SDK for java.
+
+You cannot do it from AWS CLI,management console or SQS API or any other AWS SDK.
+
+SQS client library helps to specify if all messages are stored in S3 or greater than 256KB.
+
+Also helps to specify message to send ,get or delete.
+

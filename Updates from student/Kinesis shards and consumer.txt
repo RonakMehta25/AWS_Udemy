@@ -1,0 +1,14 @@
+Kinesis shards and consumer
+
+It is used for collect,process and analyze real time streaming  data.
+
+The data capacity of your stream is sum total capacity of all shards.
+
+Per shard
+
+5 read transaction per second upto 2 MB/second
+
+1000 write record per second upto maximum of 1 MB/second.
+
+
+Consumer like EC2 uses kinesis client library. It tracks the number of shards and also discovers when new shards are added.

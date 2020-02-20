@@ -1,0 +1,4 @@
+IAM Policy Simulator
+
+It is used to validate the IAM policy works as expected before committing it to production.
+
