@@ -1,0 +1,21 @@
+Lambda Execution Environment
+
+There is control plane and data plane
+
+Control plane can create Function Management API like New Function and update function code and manages integration with other AWS services.
+
+Data plane looks afte function execution
+
+When lambda function runs, data plane allocates execution environment or chooses existing execution environment.
+
+Each execution environment hosts one concurrent invocation, but is reused in place across multiple serial invocations of the same function.
+
+Execution environments run on hardware virtualized virtual machines(microVMs). 
+
+A microVM is dedicated to an AWS account, but can be reused by execution environments across functions within an account. 
+
+MicroVMs are packed onto an AWS owned and managed hardware platform (Lambda Workers). 
+
+Execution environments are never shared across functions, and microVMs are never shared across AWS accounts.
+
+Firecracker is a new open source hypervisor developed by AWS especially for serverless workloads

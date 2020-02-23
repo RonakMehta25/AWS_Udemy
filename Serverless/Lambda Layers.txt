@@ -1,0 +1,14 @@
+Lambda Layers
+
+You can configure your Lambda function to pull in additional code and content in the form of layers. A layer is a ZIP archive that contains libraries, a custom runtime, or other dependencies. With layers, you can use libraries in your function without needing to include them in your deployment package.
+
+You can add up to five layers. The console will list layers in the current region of your AWS account, which are compatible with the function’s runtime.
+
+Alternatively, you can enter the ARN for the layer directly. This ARN can point to layers in a different AWS account (but has to be in the same region). This allows you to use layers published by third-party vendors.
+
+
+The content of the layer would be unzipped to the /opt directory in the Lambda runtime. For example, if you are using the Serverless framework to publish layers, then the content of the maxmind folder (see below) would be mapped to the /opt directory.
+
+layers still count towards the 250MB hard limit on the unzipped deployment package size.
+
+Layers has many challenges of integration and doesn't work well with static languages

@@ -1,0 +1,15 @@
+Lambda and VPC
+
+It is about enabling lambda function to access resources in your VPC.
+
+To do this, it needs 
+
+1. private subnet ID.
+2. Security grou[ ID.( with required access)
+
+
+Lambda uses this information to set up Elastic Network Interface using available IP from private subnet CIDR range.
+
+You can add VPC information to the lambda function from cmd using vpc-config parameter.
+
+aws lambda update-function-configuration --function-name {myFunction}  --vpc-config SubnetIds=  SecurityGroupIDs=

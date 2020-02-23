@@ -1,0 +1,34 @@
+Questions
+
+1. You have been asked to deploy a clustered application on a small number of EC2 instances. The application must be placed across multiple Availability Zones, have high speed, low latency communication between each of the nodes, and should also minimize the chance of underlying hardware failure. Which of the following options would provide this solution?
+
+Ans. Spread Placement Groups are recommended for applications that have a small number of critical instances which need to be kept separate from each other. Launching instances in a Spread Placement Group reduces the risk of simultaneous failures that might occur when instances share the same underlying hardware. Spread Placement Groups provide access to distinct hardware, and are therefore suitable for mixing instance types or launching instances over time. In this case, deploying the EC2 instances in a Spread Placement Group is the only correct option.
+
+
+2. You can select a specific Availability Zone in which to place your DynamoDB Table.
+Ans. False
+
+3. Your S3 backed website is consistently receiving over 400 read requests per second and is steadily rising. What can you do to achieve the best performance as traffic to your website continues to increase?
+
+Ans. Use CloudFront CDN and use S3 bucket as the origin.
+
+4. You are designing an application which needs to locate the public IP address of the EC2 instance on which it is stored. What do you do?
+
+Ans. Get the instance Metadata by visiting http://169.254.269.254/latest/meta-data/
+
+5. With EC2, you can have 2 types of storage: EBS or Instance Store. EBS is persistent, and if an EC2 instance is stopped with an EBS volume attached, there will be no data lost. Instance Store is ephemeral and if the EC2 instance is stopped, all data will be lost.
+
+Ans. True.
+
+6. Which of these AWS services do not use key-value pairs?
+Ans. Route53
+
+7. Which of the following is recommended for mobile applications which allow users to authenticate using Google credentials?
+Ans. Cognito
+
+
+8. What is the default region for all SDKs?
+Ans. US-EAST-1
+
+9. To retrieve instance metadata or user data, you will need to use the following IP Address: ________.
+Ans. http://169.254.169.254

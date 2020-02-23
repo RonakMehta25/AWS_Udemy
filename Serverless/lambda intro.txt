@@ -1,6 +1,6 @@
 Lambda
 
-It is a compute service where you can submit your code and create your lambda function.
+It is a event driven , serverless compute service where you can submit your code and create your lambda function.
 
 Lambda takes care of provisioning and managing the server that you can use to run the code.
 

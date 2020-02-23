@@ -1,0 +1,15 @@
+Concurrent Execution Limit
+
+It is safety feature to limit the number of concurrent execution in a given region per account.
+
+Default is 1000 per region
+
+HTTP status code if exceeded is 429
+
+TooManyRequestsException
+
+You can increase the limit by contacting AWS support.
+
+Request throughput limit exceeded.
+
+We can also set reserved concurrency means number of execution will always available for highly critical function.

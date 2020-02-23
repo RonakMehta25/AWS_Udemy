@@ -1,0 +1,3 @@
+Lambda application
+
+An AWS Lambda application is a combination of Lambda functions, triggers, and other resources that work together to perform tasks.

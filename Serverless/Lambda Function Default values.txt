@@ -1,0 +1,7 @@
+Lambda Function Default values
+
+Timeout : 3s
+
+Memory : 128MB
+
+Minimum Billed Duration : 100ms

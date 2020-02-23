@@ -4,7 +4,7 @@ You can publish different version of lambda in AWS. Once published , version cod
 
 $latest indicate the latest version. It is alias
 
-You can create alias fir pointing to different version. like dev can point to 1.2 and prod can point to 0.9
+You can create alias for pointing to different version. like dev can point to 1.2 and prod can point to 0.9
 
 You can also split traffic between two version but you can't use $latest. Here you can give weigh to the 2 version for spiltting traffic.
 
@@ -12,4 +12,6 @@ Each version of Lambda give different ARN.
 
 Qualified and unqualified ARN 
 
-Qualified ARN has version suffix in it. Unqualified does not have version in it.
+Qualified ARN has version suffix in it. Unqualified does not have version in it. or alias at the end
+
+When you use unqualified ARN it means you want to use $latest.

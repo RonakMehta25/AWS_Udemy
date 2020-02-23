@@ -1,0 +1,22 @@
+SWF
+
+
+Amazon Simple Workflow Service (SWF) is a web service that makes it easy to coordinate work across distributed application components.
+
+In Amazon SWF, tasks represent invocations of logical steps in applications. 
+
+Tasks are processed by workers which are programs that interact with Amazon SWF to get tasks, process them, and return their results. A worker implements an application processing step. 
+
+You can build workers in different programming languages and even reuse existing components to quickly create the worker.
+
+To coordinate the application execution across workers, you write a program called the decider in your choice of programming language. 
+
+The separation of processing steps and their coordination makes it possible to manage your application in a controlled manner and give you the flexibility to deploy, run, scale and update them independently.
+
+Q: What are the different ways to access SWF?
+You can access SWF in any of the following ways:
+
+AWS SDK for Java, Ruby, .NET, and PHP
+AWS Flow Framework for Java (Included in the AWS SDK for Java)
+Amazon SWF web service APIs
+AWS Management Console

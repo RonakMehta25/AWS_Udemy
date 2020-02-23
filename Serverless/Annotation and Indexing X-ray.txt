@@ -1,0 +1,7 @@
+Annotation and Indexing X-ray
+
+You can record additional information about request using annotation.
+
+Annotation are key value pair that are indexed for use with filter expression.
+
+For X-ray running in ECS,it needs it's own Docker image,running alongside your application.
